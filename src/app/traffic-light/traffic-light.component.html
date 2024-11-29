@@ -1,0 +1,19 @@
+<p>traffic-light works!</p>
+<div class="traffic-light" (click)="changeLight()">
+    <div
+      class="light"
+      [class.active]="currentLight === 'red'"
+      style="background-color: red"
+    ></div>
+    <div
+      class="light"
+      [class.active]="currentLight === 'yellow'"
+      style="background-color: yellow"
+    ></div>
+    <div
+      class="light"
+      [class.active]="currentLight === 'green'"
+      style="background-color: green"
+    ></div>
+  </div>
+  
